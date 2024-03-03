@@ -1,351 +1,78 @@
-/* .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner.png");
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+hr.new2 {
+    border-top: 2px dashed rgb(104, 103, 103);
+   
+  }
+
+
+
+  .container1 {
     position: relative;
-  } */
+    font-family: Arial;
+    background: #12132D;
   
-  .hero-text {
-    text-align: center;
+    border-radius: 30px;
+    margin-top: 10px;
+  }
+  
+  .text-block {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    bottom: 120px;
+    right: 100px;
+    background-color: rgb(238, 233, 233);
+    color: rgb(0, 0, 0);
+    padding: 25px 25px 25px 25px;
+    border-radius: 10px;
+    font-size: 25px;
+    
+   
+  }
+
+
+  
+  .text-block1 {
+    position: absolute;
+    bottom: 80px;
+    left: 100px;
+    /* background-color: rgb(224, 15, 15); */
+    color: rgb(0, 0, 0);
+    padding: 25px 25px 25px 25px;
+    border-radius: 10px;
+
+    
+    
+   
+  }
+
+
+
+
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
   }
   
-  .hero-text button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #1DD100;
-    text-align: center;
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
     cursor: pointer;
-    border-radius: 5px;
-    margin-top: 25px;
   }
   
-  .hero-text button:hover {
-    background-color: #25fa65;
-    color: white;
+  form.example button:hover {
+    background: #0b7dda;
   }
-
-
-  .nameImage img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
   }
-
-.new-button button{
-  border: 2px solid #25fa65 ;
-  padding: 10px 25px;
-  border-radius: 5px;
-  color: #25fa65;
-
-  /* align-items: center; */
-}
-
-.new-button{
-  text-align: center;
- 
-}
-
-
-/* .row{
-  justify-content: space-evenly;
-} */
-
-/* Create three equal columns that floats next to each other */
-.column1 {
-  float: left;
-  width: 60%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-.column2 {
-  float: left;
-  /* width: 10%;
-  padding: 10px;
-  height: 300px; Should be removed. Only for demonstration */
-}
-
- .vl {
-  border-left: 3px dotted green;
-  height: 300px;
-  padding-left: 50px;
-  /* padding-right: -50px;
-   */
-}
-
-.column3 {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-.row .time{
-  /* background-color: #1DD100; */
-  display: flex;
-  justify-content: space-between;
-  color: black;
-  margin-top: 10px;
-}
-
-.row .route{
-  /* background-color: #25fa65; */
-  display: flex;
-  justify-content: space-between;
-  color: black;
-  margin-top: 10px;
-}
-
-.row .btn-button{
-  display: flex;
-  justify-content: space-between;
-  color: black;
-  margin-top: 10px;
-}
-
-.row .column1 .two-greenline-items .greenline{
-  /* background-color: #1DD100; */
-  display: flex;
-}
-
-.row .column1 .two-greenline-items .seat-40{
-  /* background-color:rgb(149, 182, 149);opacity:0.6; */
-  color: #1DD100;
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
-
-.row .column1 .two-greenline-items{
-  /* background-color: #da1b74; */
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-}
-
-.row .column3{
-  /* align-items: center; */
-  text-align: center;
-  
-  
-}
-
-.row .column3 .taka img{
-  /* align-items: center; */
-  /* align-items: self-end;
-  background: #1DD100; */
-  margin-top: 25px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-
-/* starting ticket no */
-
-/* Create two equal columns that floats next to each other */
-.column4 {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: auto;
- 
-}
-
-
-.column5 {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: auto;
-  
-}
-
-/* Clear floats after the columns */
-.rowNew:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.rowNew .column4 .two-div .available{
-  /* background-color: #1DD100; */
-  display: flex;
-
-}
-
-.rowNew .column4 .two-div .selected{
-  color: #1DD100;
-  display: flex;
-
-}
-
-.rowNew .column4 .two-div{
-  display: flex;
-  justify-content: space-between;
-}
-
- /* Basic button styling */
- .my-button {
-  background-color: #7c7e7d; /* Green */
-  border: none;
-  color: rgb(0, 0, 0);
-  padding: 15px 52px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 10%;
-  border-radius: 5px;
-
-
-}
-
-
-.rowNew .column5 .seat-class-price{
-  display: flex;
-  justify-content: space-around;
-}
-
-.rowNew .column5 .c2-economoy-550{
-  display: flex;
-  justify-content: space-around;
-}
-
-.rowNew .column5 .total-price{
-  display: flex;
-  justify-content: space-between;
-}
-
-.apply-input button {
-  background-color: #1DD100;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-input[type=text], select {
-  width: 80%;
-  padding: 15px 32px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=text1], select {
-  width: 100%;
-  padding: 15px 32px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-
-.next-button {
-  width: 100%;
-  background-color: #1DD100;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-.terms-and-condition ul {
-  display: flex;
-  justify-content: space-between;
-  text-decoration: underline;
-}
-
-
-/* modifiying  */
-
-.rowNew .group-button img{
-  /* background-color: #1DD100; */
-  display: block;
-  margin-left: auto;
-  margin-right: 50px;
-}
-
-.success-alert-box{
-  background-color: rgb(200, 198, 202);
-  position: relative;
-  width: 800px;
-  height: 450px;
-  border-radius: 25px;
-  /* display: flex; */
-  align-items: center;
-  margin: auto;
-  text-align: center;
-  justify-content: center;
-  /* width: 50%;
-  padding: 10px; */
-  display: none;
-
-  animation-name: animatemodal;
-  animation-duration: .4s;
-
-}
-
-
-
-.success-alert-box img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 60px;
-}
-
-
-
-
-/* need all similer number button html and css and javascript
-
-A, A1, A2, A3, A4
-B, B1, B2, B3, B4
-C, C1, C2, C3, C4
-D, D1, D2, D3, D4
-E, E1, E2, E3, E4
-F, F1, F2, F3, F4
-G, G1, G2, G3, G4
-H, H1, H2, H3, H4
-I, I1, I2, I3, I4
-J, J1, J2, J3, J4 */
