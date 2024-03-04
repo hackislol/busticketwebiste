@@ -1,5 +1,7 @@
 // Let’s Discuss post starting
 
+let count = 0;
+
 const discussPost = async () => {
     const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/posts');
     const data = await res.json();
@@ -49,7 +51,7 @@ const discussPost = async () => {
             </div>
           </div>
           <div class="flex gap-2">
-            <button><img src="images/Group 40106.png" alt=""></button>
+            <button onclick="handleAddTitle('${item.title},${item.view_count} ')"><img src="images/Group 40106.png" alt=""></button>
             <h1>15 min</h1>
           </div>
         </div>
@@ -98,6 +100,31 @@ const latestPost = async () => {
     })
 }
 
+
+
+// here is button click add 
+const handleAddTitle = (id) => {
+
+  console.log("here is clcik now", id);
+  count = count + 1;
+  console.log(count)
+  document.getElementById('cart-count').innerText = count;
+
+  const heading = document.getElementById('heading');
+  const countNumber = document.getElementById('countNumber');
+
+  
+
+  const h1 = document.createElement("h1");
+  const p = document.createElement("p");
+  
+  h1.innerText = id;
+  p.innerText = id ;
+
+  heading.appendChild(h1);
+  countNumber.appendChild(p);
+  
+}
 
 discussPost();
 latestPost();
